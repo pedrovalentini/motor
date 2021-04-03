@@ -19,11 +19,10 @@ struct RandomTextView: View {
             Form {
                 Section(header: Text(LocalizedStringKey("Random Text"))) {
                     TextEditor(text: $viewModel.text)
-                        .onChange(of: viewModel.text) { value in
-                            viewModel.onChange(value)
-                        }
+                        .onChange(of: viewModel.text,
+                                  perform: viewModel.onChange)
                         .frame(height: 160)
-                    Text(LocalizedStringKey("\(self.viewModel.wordsCount) words"))
+                    Text(LocalizedStringKey("\(viewModel.wordsCount) words"))
                         .foregroundColor(.secondary)
                     Button(LocalizedStringKey("Make Random"),
                            action: viewModel.setRandomText)

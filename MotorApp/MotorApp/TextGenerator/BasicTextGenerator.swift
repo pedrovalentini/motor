@@ -11,8 +11,8 @@ struct BasicTextGenerator: TextGenerator {
     
     // Sample word list to the demonstration, should be a real dictionary
     static let defaultConfig = Config(wordsList: ["hi", "how", "are", "you", "I", "good", "red", "blue", "dog", "tree", "sample", "code", "cat"],
-                                    minNumberOfWords: 8,
-                                    maxNumberOfWords: 16)
+                                      minNumberOfWords: 8,
+                                      maxNumberOfWords: 16)
     
     struct Config {
         let wordsList: [String]
