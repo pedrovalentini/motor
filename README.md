@@ -1,5 +1,5 @@
 # motor
-Motor SwiftUI MVVM UnitTest Sample
+Motor is a simple sample experiment to test SwiftUI with MVVM
 
 <img width="568" alt="preview" src="https://user-images.githubusercontent.com/103668/113280561-5ca96d80-92dc-11eb-9668-e44eb57aae5c.png">
 
